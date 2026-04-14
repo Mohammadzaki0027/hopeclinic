@@ -1,3 +1,4 @@
+import VideoCarousel from "@/components/YoutubeCorosel";
 import { motion } from "framer-motion";
 import { Phone, MapPin, Clock, Star, Users, Zap, Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -58,17 +59,17 @@ export default function Index() {
 
   const testimonials = [
     {
-      name: "Priya Sharma",
+      name: "Zaki Shaikh",
       rating: 5,
       text: "Excellent treatment for my acne. Dr. is very professional and caring.",
     },
     {
-      name: "Rajesh Patel",
+      name: "Kamran Tawakkal",
       rating: 5,
       text: "Great experience with hair loss treatment. Visible results in 3 months.",
     },
     {
-      name: "Sneha Desai",
+      name: "Riyaz Shaikh",
       rating: 5,
       text: "Best skin clinic in the area. Very hygienic and friendly staff.",
     },
@@ -262,46 +263,22 @@ export default function Index() {
               <div className="relative">
                 {/* Placeholder clinic image */}
                 <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden relative">
-                  <svg
-                    className="w-full h-full"
-                    viewBox="0 0 400 400"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <defs>
-                      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style={{ stopColor: "#2dd4bf", stopOpacity: 0.1 }} />
-                        <stop offset="100%" style={{ stopColor: "#ff6b4a", stopOpacity: 0.1 }} />
-                      </linearGradient>
-                    </defs>
-                    {/* Background */}
-                    <rect width="400" height="400" fill="url(#grad1)" />
-                    {/* Clinic building */}
-                    <rect x="50" y="120" width="300" height="250" fill="#e8f8f5" stroke="#2dd4bf" strokeWidth="2" />
-                    {/* Roof */}
-                    <polygon points="50,120 200,40 350,120" fill="#2dd4bf" />
-                    {/* Door */}
-                    <rect x="175" y="280" width="50" height="90" fill="#ff6b4a" />
-                    {/* Door handle */}
-                    <circle cx="220" cy="325" r="4" fill="#fff" />
-                    {/* Windows */}
-                    <rect x="80" y="150" width="40" height="40" fill="#87ceeb" stroke="#2dd4bf" strokeWidth="2" />
-                    <rect x="140" y="150" width="40" height="40" fill="#87ceeb" stroke="#2dd4bf" strokeWidth="2" />
-                    <rect x="220" y="150" width="40" height="40" fill="#87ceeb" stroke="#2dd4bf" strokeWidth="2" />
-                    <rect x="280" y="150" width="40" height="40" fill="#87ceeb" stroke="#2dd4bf" strokeWidth="2" />
-                    {/* Window panes */}
-                    <line x1="100" y1="150" x2="100" y2="190" stroke="#2dd4bf" strokeWidth="1" />
-                    <line x1="80" y1="170" x2="120" y2="170" stroke="#2dd4bf" strokeWidth="1" />
-                    {/* Cross symbol for medical */}
-                    <line x1="80" y1="220" x2="120" y2="220" stroke="#2dd4bf" strokeWidth="3" />
-                    <line x1="100" y1="200" x2="100" y2="240" stroke="#2dd4bf" strokeWidth="3" />
-                  </svg>
+          
+             <motion.img
+      src="/images/skinhospital.jpeg"
+      alt="Clinic"
+      className="w-full h-full object-cover"
+      initial={{ scale: 1.2 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 1 }}
+    />
                 </div>
 
                 {/* Floating badges */}
                 <motion.div
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className="absolute -top-4 -right-4 bg-white rounded-lg shadow-lg p-4 w-32"
+                  className="absolute -top-4 -right-4 bg-white rounded-lg shadow-lg p-4 w-48"
                 >
                   <div className="flex items-center gap-2">
                     <div className="text-2xl">⭐</div>
@@ -315,7 +292,7 @@ export default function Index() {
                 <motion.div
                   animate={{ y: [0, 10, 0] }}
                   transition={{ duration: 2.5, repeat: Infinity }}
-                  className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-4 w-32"
+                  className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-4 w-64"
                 >
                   <div className="flex items-center gap-2">
                     <div className="text-2xl">✓</div>
@@ -363,7 +340,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-
+      <VideoCarousel />
       {/* Doctor Section */}
       <section id="doctor" className="py-20 bg-gradient-to-br from-slate-50 to-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -371,50 +348,46 @@ export default function Index() {
             {/* Doctor Image Placeholder */}
             <motion.div {...slideInLeft} className="relative">
               <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden flex items-center justify-center">
-                <svg
-                  className="w-64 h-64"
-                  viewBox="0 0 200 280"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {/* Head */}
-                  <circle cx="100" cy="60" r="35" fill="#d4a574" />
-                  {/* Hair */}
-                  <path
-                    d="M 65 45 Q 65 25, 100 25 Q 135 25, 135 45"
-                    fill="#3d2817"
-                  />
-                  {/* Eyes */}
-                  <circle cx="90" cy="55" r="4" fill="#000" />
-                  <circle cx="110" cy="55" r="4" fill="#000" />
-                  {/* Smile */}
-                  <path d="M 90 65 Q 100 72, 110 65" stroke="#000" strokeWidth="2" fill="none" />
-                  {/* Body - Doctor coat */}
-                  <rect x="75" y="100" width="50" height="120" fill="#fff" stroke="#2dd4bf" strokeWidth="2" rx="5" />
-                  {/* Stethoscope */}
-                  <path
-                    d="M 90 110 Q 80 120, 75 140"
-                    stroke="#2dd4bf"
-                    strokeWidth="3"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M 110 110 Q 120 120, 125 140"
-                    stroke="#2dd4bf"
-                    strokeWidth="3"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  {/* Stethoscope circles */}
-                  <circle cx="75" cy="140" r="5" fill="#2dd4bf" />
-                  <circle cx="125" cy="140" r="5" fill="#2dd4bf" />
-                  {/* Hands */}
-                  <rect x="60" y="115" width="10" height="60" fill="#d4a574" rx="5" />
-                  <rect x="130" y="115" width="10" height="60" fill="#d4a574" rx="5" />
-                  {/* Legs */}
-                  <rect x="85" y="220" width="10" height="60" fill="#333" />
-                  <rect x="105" y="220" width="10" height="60" fill="#333" />
-                </svg>
+       <motion.div
+  {...slideInLeft}
+  whileHover={{ scale: 1.05 }}
+  transition={{ type: "spring", stiffness: 200 }}
+  className="relative"
+>
+  <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-xl relative">
+    
+    <motion.img
+      src="/images/doctor.jpg"
+      alt="Dr. Shadab Khan"
+      className="w-full h-full object-contain"
+      initial={{ scale: 1.2 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 1 }}
+    />
+
+    {/* 🔥 Name Overlay */}
+    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+      <h3 className="text-green text-xl font-bold">
+        Dr. Shadab Khan
+      </h3>
+      <p className="text-gray-200 text-sm">
+        Dermatologist
+      </p>
+    </div>
+  </div>
+
+  {/* Floating Badge */}
+  <motion.div
+    animate={{ y: [0, -10, 0] }}
+    transition={{ duration: 2, repeat: Infinity }}
+    className="absolute -top-6 -right-6 bg-secondary text-white rounded-full w-24 h-24 flex items-center justify-center font-bold text-center shadow-lg"
+  >
+    <div className="text-sm">
+      <p className="font-bold">BUMS</p>
+      <p className="text-xs">MD PG</p>
+    </div>
+  </motion.div>
+</motion.div>
               </div>
 
               {/* Badge */}
@@ -600,7 +573,7 @@ export default function Index() {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Address</h3>
                     <p className="text-gray-700">
-                      Chota Bazar, Malkapur<br />
+                      Chota Bazar,Near Nice Pharma  Malkapur<br />
                       Dist. Buldana, Maharashtra
                     </p>
                   </div>
