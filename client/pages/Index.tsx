@@ -28,7 +28,8 @@ export default function Index() {
     {
       icon: "🩹",
       title: "Acne Treatment",
-      description: "Advanced acne solutions including laser therapy and chemical peels",
+      description:
+        "Advanced acne solutions including laser therapy and chemical peels",
     },
     {
       icon: "💇",
@@ -98,16 +99,28 @@ export default function Index() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#services" className="text-gray-600 hover:text-primary transition">
+            <a
+              href="#services"
+              className="text-gray-600 hover:text-primary transition"
+            >
               Services
             </a>
-            <a href="#doctor" className="text-gray-600 hover:text-primary transition">
+            <a
+              href="#doctor"
+              className="text-gray-600 hover:text-primary transition"
+            >
               Doctor
             </a>
-            <a href="#about" className="text-gray-600 hover:text-primary transition">
+            <a
+              href="#about"
+              className="text-gray-600 hover:text-primary transition"
+            >
               About
             </a>
-            <a href="#contact" className="text-gray-600 hover:text-primary transition">
+            <a
+              href="#contact"
+              className="text-gray-600 hover:text-primary transition"
+            >
               Contact
             </a>
             <a
@@ -213,10 +226,10 @@ export default function Index() {
                 </h1>
 
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Welcome to The Hope Skin Hospital - your premier destination for
-                  advanced dermatological treatments and skin care excellence. With 4
-                  years of specialized experience, we're committed to transforming
-                  your skin health.
+                  Welcome to The Hope Skin Hospital - your premier destination
+                  for advanced dermatological treatments and skin care
+                  excellence. With 4 years of specialized experience, we're
+                  committed to transforming your skin health.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -263,15 +276,14 @@ export default function Index() {
               <div className="relative">
                 {/* Placeholder clinic image */}
                 <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden relative">
-          
-             <motion.img
-      src="/images/skinhospital.jpeg"
-      alt="Clinic"
-      className="w-full h-full object-cover"
-      initial={{ scale: 1.2 }}
-      animate={{ scale: 1 }}
-      transition={{ duration: 1 }}
-    />
+                  <motion.img
+                    src="/images/skinhospital.jpeg"
+                    alt="Clinic"
+                    className="w-full h-full object-cover"
+                    initial={{ scale: 1.2 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 1 }}
+                  />
                 </div>
 
                 {/* Floating badges */}
@@ -311,15 +323,13 @@ export default function Index() {
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <motion.div
-            {...fadeIn}
-            className="text-center mb-16"
-          >
+          <motion.div {...fadeIn} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Our Services
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Comprehensive dermatological treatments tailored to your skin needs
+              Comprehensive dermatological treatments tailored to your skin
+              needs
             </p>
           </motion.div>
 
@@ -332,8 +342,12 @@ export default function Index() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-primary/30 transition group"
               >
-                <div className="text-4xl mb-4 group-hover:scale-110 transition">{service.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+                <div className="text-4xl mb-4 group-hover:scale-110 transition">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  {service.title}
+                </h3>
                 <p className="text-gray-600">{service.description}</p>
               </motion.div>
             ))}
@@ -342,52 +356,52 @@ export default function Index() {
       </section>
       <VideoCarousel />
       {/* Doctor Section */}
-      <section id="doctor" className="py-20 bg-gradient-to-br from-slate-50 to-white">
+      <section
+        id="doctor"
+        className="py-20 bg-gradient-to-br from-slate-50 to-white"
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Doctor Image Placeholder */}
             <motion.div {...slideInLeft} className="relative">
               <div className="w-full aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl overflow-hidden flex items-center justify-center">
-       <motion.div
-  {...slideInLeft}
-  whileHover={{ scale: 1.05 }}
-  transition={{ type: "spring", stiffness: 200 }}
-  className="relative"
->
-  <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-xl relative">
-    
-    <motion.img
-      src="/images/doctor.jpg"
-      alt="Dr. Shadab Khan"
-      className="w-full h-full object-contain"
-      initial={{ scale: 1.2 }}
-      animate={{ scale: 1 }}
-      transition={{ duration: 1 }}
-    />
+                <motion.div
+                  {...slideInLeft}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 200 }}
+                  className="relative"
+                >
+                  <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-xl relative">
+                    <motion.img
+                      src="/images/doctor.jpg"
+                      alt="Dr. Shadab Khan"
+                      className="w-full h-full object-contain"
+                      initial={{ scale: 1.2 }}
+                      animate={{ scale: 1 }}
+                      transition={{ duration: 1 }}
+                    />
 
-    {/* 🔥 Name Overlay */}
-    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-      <h3 className="text-green text-xl font-bold">
-        Dr. Shadab Khan
-      </h3>
-      <p className="text-gray-200 text-sm">
-        Dermatologist
-      </p>
-    </div>
-  </div>
+                    {/* 🔥 Name Overlay */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                      <h3 className="text-green text-xl font-bold">
+                        Dr. Shadab Khan
+                      </h3>
+                      <p className="text-gray-200 text-sm">Dermatologist</p>
+                    </div>
+                  </div>
 
-  {/* Floating Badge */}
-  <motion.div
-    animate={{ y: [0, -10, 0] }}
-    transition={{ duration: 2, repeat: Infinity }}
-    className="absolute -top-6 -right-6 bg-secondary text-white rounded-full w-24 h-24 flex items-center justify-center font-bold text-center shadow-lg"
-  >
-    <div className="text-sm">
-      <p className="font-bold">BUMS</p>
-      <p className="text-xs">MD PG</p>
-    </div>
-  </motion.div>
-</motion.div>
+                  {/* Floating Badge */}
+                  <motion.div
+                    animate={{ y: [0, -10, 0] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className="absolute -top-6 -right-6 bg-secondary text-white rounded-full w-24 h-24 flex items-center justify-center font-bold text-center shadow-lg"
+                  >
+                    <div className="text-sm">
+                      <p className="font-bold">BUMS</p>
+                      <p className="text-xs">MD PG</p>
+                    </div>
+                  </motion.div>
+                </motion.div>
               </div>
 
               {/* Badge */}
@@ -417,14 +431,18 @@ export default function Index() {
                   <p className="text-sm text-primary font-semibold uppercase tracking-wide">
                     Qualification
                   </p>
-                  <p className="text-2xl font-bold text-gray-900">BUMS MD PG in Cosmetology</p>
+                  <p className="text-2xl font-bold text-gray-900">
+                    BUMS MD PG in Cosmetology
+                  </p>
                 </div>
 
                 <div>
                   <p className="text-sm text-primary font-semibold uppercase tracking-wide">
                     Experience
                   </p>
-                  <p className="text-2xl font-bold text-gray-900">4+ Years in Dermatology</p>
+                  <p className="text-2xl font-bold text-gray-900">
+                    4+ Years in Dermatology
+                  </p>
                 </div>
 
                 <div>
@@ -432,15 +450,17 @@ export default function Index() {
                     Specialization
                   </p>
                   <p className="text-gray-700">
-                    Acne treatment, Hair loss solutions, Anti-aging treatments, Skin rejuvenation
+                    Acne treatment, Hair loss solutions, Anti-aging treatments,
+                    Skin rejuvenation
                   </p>
                 </div>
               </div>
 
               <p className="text-gray-700 text-lg leading-relaxed">
-                Our experienced dermatologist is dedicated to providing personalized, 
-                compassionate care for all your skin concerns. With advanced techniques 
-                and a patient-first approach, we ensure you receive the best possible treatment outcomes.
+                Our experienced dermatologist is dedicated to providing
+                personalized, compassionate care for all your skin concerns.
+                With advanced techniques and a patient-first approach, we ensure
+                you receive the best possible treatment outcomes.
               </p>
 
               <div className="pt-4">
@@ -471,27 +491,45 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12">
             <motion.div {...slideInLeft} className="space-y-6">
               <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-8 border border-primary/10">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Our Vision
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To be the leading dermatology center providing world-class skin care 
-                  treatments with compassion, integrity, and excellence.
+                  To be the leading dermatology center providing world-class
+                  skin care treatments with compassion, integrity, and
+                  excellence.
                 </p>
               </div>
 
               <div className="bg-gradient-to-br from-secondary/5 to-primary/5 rounded-xl p-8 border border-secondary/10">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Our Mission
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To deliver advanced dermatological treatments using cutting-edge technology 
-                  and evidence-based practices, ensuring optimal results and patient satisfaction.
+                  To deliver advanced dermatological treatments using
+                  cutting-edge technology and evidence-based practices, ensuring
+                  optimal results and patient satisfaction.
                 </p>
               </div>
             </motion.div>
 
             <motion.div {...slideInRight} className="space-y-8">
               {[
-                { icon: <Star size={24} />, title: "Premium Care", desc: "State-of-the-art facilities" },
-                { icon: <Users size={24} />, title: "Expert Team", desc: "Highly qualified specialists" },
-                { icon: <Zap size={24} />, title: "Advanced Tech", desc: "Latest treatment methods" },
+                {
+                  icon: <Star size={24} />,
+                  title: "Premium Care",
+                  desc: "State-of-the-art facilities",
+                },
+                {
+                  icon: <Users size={24} />,
+                  title: "Expert Team",
+                  desc: "Highly qualified specialists",
+                },
+                {
+                  icon: <Zap size={24} />,
+                  title: "Advanced Tech",
+                  desc: "Latest treatment methods",
+                },
               ].map((item, i) => (
                 <motion.div
                   key={i}
@@ -506,7 +544,9 @@ export default function Index() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-gray-900">{item.title}</h4>
+                    <h4 className="text-lg font-bold text-gray-900">
+                      {item.title}
+                    </h4>
                     <p className="text-gray-600">{item.desc}</p>
                   </div>
                 </motion.div>
@@ -539,10 +579,16 @@ export default function Index() {
               >
                 <div className="flex items-center gap-1 mb-4">
                   {Array.from({ length: testimonial.rating }).map((_, j) => (
-                    <Star key={j} size={18} className="fill-yellow-400 text-yellow-400" />
+                    <Star
+                      key={j}
+                      size={18}
+                      className="fill-yellow-400 text-yellow-400"
+                    />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 italic">"{testimonial.text}"</p>
+                <p className="text-gray-700 mb-6 italic">
+                  "{testimonial.text}"
+                </p>
                 <p className="font-bold text-gray-900">{testimonial.name}</p>
                 <p className="text-sm text-gray-500">Verified Patient</p>
               </motion.div>
@@ -571,9 +617,12 @@ export default function Index() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Address</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Address
+                    </h3>
                     <p className="text-gray-700">
-                      Chota Bazar,Near Nice Pharma  Malkapur<br />
+                      Chota Bazar,Near Nice Pharma Malkapur
+                      <br />
                       Dist. Buldana, Maharashtra
                     </p>
                   </div>
@@ -586,8 +635,13 @@ export default function Index() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Contact</h3>
-                    <a href="tel:9834315358" className="text-primary hover:underline block mb-2">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Contact
+                    </h3>
+                    <a
+                      href="tel:9834315358"
+                      className="text-primary hover:underline block mb-2"
+                    >
                       +91 9834315358
                     </a>
                     <a
@@ -608,8 +662,12 @@ export default function Index() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Timings</h3>
-                    <p className="text-gray-700 mb-1">Morning: 9:00 AM - 2:00 PM</p>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Timings
+                    </h3>
+                    <p className="text-gray-700 mb-1">
+                      Morning: 9:00 AM - 2:00 PM
+                    </p>
                     <p className="text-gray-700">Evening: 5:00 PM - 10:00 PM</p>
                   </div>
                 </div>
@@ -628,50 +686,36 @@ export default function Index() {
 
             {/* Map Placeholder */}
             <motion.div {...slideInRight} className="relative">
-              <div className="w-full aspect-square bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl overflow-hidden flex items-center justify-center relative">
-                <svg
+              <div className="w-full aspect-square rounded-xl overflow-hidden shadow-lg relative">
+                {/* ✅ Google Map */}
+                <iframe
+                  src="https://www.google.com/maps?q=20.8877588,76.1962852&z=17&output=embed"
                   className="w-full h-full"
-                  viewBox="0 0 400 400"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {/* Map background */}
-                  <rect width="400" height="400" fill="#e8f8f5" />
-                  {/* Grid lines */}
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <g key={i}>
-                      <line x1={i * 100} y1="0" x2={i * 100} y2="400" stroke="#2dd4bf" strokeWidth="1" opacity="0.3" />
-                      <line x1="0" y1={i * 100} x2="400" y2={i * 100} stroke="#2dd4bf" strokeWidth="1" opacity="0.3" />
-                    </g>
-                  ))}
-                  {/* Location pin */}
-                  <g transform="translate(200, 180)">
-                    {/* Pin shape */}
-                    <path
-                      d="M 0 0 C -22 -22, -40 -40, -40 -60 C -40 -86.27, -21.84 -108, 0 -108 C 21.84 -108, 40 -86.27, 40 -60 C 40 -40, 22 -22, 0 0 Z"
-                      fill="#2dd4bf"
-                    />
-                    {/* Circle inside pin */}
-                    <circle cx="0" cy="-60" r="12" fill="#fff" />
-                  </g>
-                  {/* Clinic name label */}
-                  <text x="200" y="350" textAnchor="middle" fontSize="16" fontWeight="bold" fill="#1a4d47">
-                    The Hope Skin Hospital
-                  </text>
-                  <text x="200" y="370" textAnchor="middle" fontSize="12" fill="#2dd4bf">
-                    Malkapur, Buldana
-                  </text>
-                </svg>
+                  loading="lazy"
+                />
               </div>
 
-              {/* Info Card */}
+              {/* ✅ Info Card (Keep Animation) */}
               <motion.div
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -bottom-8 -right-8 bg-white rounded-lg shadow-xl p-4 w-56 border-l-4 border-primary"
               >
-                <p className="font-bold text-gray-900 mb-1">Old Town Fort</p>
+                <p className="font-bold text-gray-900 mb-1">
+                  Chota Bazar, Near Nice Pharma
+                </p>
                 <p className="text-sm text-gray-600">Malkapur Dist Buldana</p>
                 <p className="text-xs text-primary mt-2">Open 9 AM - 10 PM</p>
+
+                {/* 🔥 Add Button */}
+                <a
+                  href="https://www.google.com/maps?q=20.8877588,76.1962852"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-primary font-semibold mt-2 inline-block"
+                >
+                  View on Map →
+                </a>
               </motion.div>
             </motion.div>
           </div>
@@ -726,33 +770,48 @@ export default function Index() {
             <div>
               <h4 className="font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#services" className="hover:text-primary transition">Services</a></li>
-                <li><a href="#doctor" className="hover:text-primary transition">Doctor</a></li>
-                <li><a href="#about" className="hover:text-primary transition">About</a></li>
-                <li><a href="#contact" className="hover:text-primary transition">Contact</a></li>
+                <li>
+                  <a href="#services" className="hover:text-primary transition">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#doctor" className="hover:text-primary transition">
+                    Doctor
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" className="hover:text-primary transition">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="hover:text-primary transition">
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div>
               <h4 className="font-bold mb-4">Contact</h4>
               <p className="text-sm text-gray-400 mb-2">
-                <a href="tel:9834315358" className="hover:text-primary transition">
+                <a
+                  href="tel:9834315358"
+                  className="hover:text-primary transition"
+                >
                   +91 9834315358
                 </a>
               </p>
               <p className="text-sm text-gray-400">
-                Malkapur, Dist. Buldana
+                Chota Bazar, Near Nice Pharma Malkapur, Dist. Buldana
               </p>
             </div>
 
             <div>
               <h4 className="font-bold mb-4">Hours</h4>
-              <p className="text-sm text-gray-400 mb-1">
-                Morning: 9 AM - 2 PM
-              </p>
-              <p className="text-sm text-gray-400">
-                Evening: 5 PM - 10 PM
-              </p>
+              <p className="text-sm text-gray-400 mb-1">Morning: 9 AM - 2 PM</p>
+              <p className="text-sm text-gray-400">Evening: 5 PM - 10 PM</p>
             </div>
           </div>
 
