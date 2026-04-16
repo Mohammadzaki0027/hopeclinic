@@ -26,6 +26,12 @@ export default function Index() {
 
   const services = [
     {
+  icon: "🩸", // or use icon component
+  title: "Hijama Therapy",
+  description:
+    "A traditional cupping therapy that helps detoxify the body, improve blood circulation, and relieve pain. Effective for skin issues, stress, and overall wellness.",
+},
+    {
       icon: "🩹",
       title: "Acne Treatment",
       description:
@@ -124,7 +130,7 @@ export default function Index() {
               Contact
             </a>
             <a
-              href="https://wa.me/919834315358"
+              href="https://wa.me/918380051197"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition"
@@ -179,7 +185,7 @@ export default function Index() {
                 Contact
               </a>
               <a
-                href="https://wa.me/919834315358"
+                href="https://wa.me/918380051197"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-primary text-white px-6 py-2 rounded-lg text-center hover:bg-opacity-90 transition"
@@ -234,7 +240,7 @@ export default function Index() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="https://wa.me/919834315358"
+                    href="https://wa.me/918380051197"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/30 transition duration-300 text-center"
@@ -255,7 +261,7 @@ export default function Index() {
                     <p className="text-gray-600 text-sm">Years Experience</p>
                   </div>
                   <div>
-                    <p className="text-3xl font-bold text-primary">1000+</p>
+                    <p className="text-3xl font-bold text-primary">500+</p>
                     <p className="text-gray-600 text-sm">Happy Patients</p>
                   </div>
                   <div>
@@ -321,7 +327,7 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-20 bg-white scroll-mt-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div {...fadeIn} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -357,8 +363,8 @@ export default function Index() {
       <VideoCarousel />
       {/* Doctor Section */}
       <section
-        id="doctor"
-        className="py-20 bg-gradient-to-br from-slate-50 to-white"
+       id="doctor" 
+       className="py-20 scroll-mt-24"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -465,7 +471,7 @@ export default function Index() {
 
               <div className="pt-4">
                 <a
-                  href="https://wa.me/919834315358"
+                  href="https://wa.me/918380051197"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/30 transition"
@@ -480,7 +486,7 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 scroll-mt-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div {...fadeIn} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -598,7 +604,7 @@ export default function Index() {
       </section>
 
       {/* Contact & Map Section */}
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-20 scroll-mt-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div {...fadeIn} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -639,13 +645,13 @@ export default function Index() {
                       Contact
                     </h3>
                     <a
-                      href="tel:9834315358"
+                      href="tel:8380051197"
                       className="text-primary hover:underline block mb-2"
                     >
-                      +91 9834315358
+                      +91 8380051197
                     </a>
                     <a
-                      href="https://wa.me/919834315358"
+                      href="https://wa.me/918380051197"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline"
@@ -674,7 +680,7 @@ export default function Index() {
               </div>
 
               <a
-                href="https://wa.me/919834315358"
+                href="https://wa.me/918380051197"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/30 transition text-center flex items-center justify-center gap-2"
@@ -741,7 +747,7 @@ export default function Index() {
             Schedule your consultation with our expert dermatologist today
           </p>
           <a
-            href="https://wa.me/919834315358"
+            href="https://wa.me/918380051197"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition shadow-lg"
@@ -797,10 +803,10 @@ export default function Index() {
               <h4 className="font-bold mb-4">Contact</h4>
               <p className="text-sm text-gray-400 mb-2">
                 <a
-                  href="tel:9834315358"
+                  href="tel:8380051197"
                   className="hover:text-primary transition"
                 >
-                  +91 9834315358
+                  +91 8380051197
                 </a>
               </p>
               <p className="text-sm text-gray-400">
